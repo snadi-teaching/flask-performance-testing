@@ -5,7 +5,7 @@ import os
 app = Flask(__name__)
 
 
-BACKEND_URL = "http://localhost:5000"
+BACKEND_URL = "http://127.0.0.1:6969"
 
 
 @app.route("/")

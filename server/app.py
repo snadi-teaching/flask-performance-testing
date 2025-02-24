@@ -10,7 +10,7 @@ CORS(
     app,
     resources={
         r"/*": {
-            "origins": ["http://localhost:8000"],  # Get origin from env with fallback
+            "origins": ["http://127.0.0.1:8000"],  # Get origin from env with fallback
             "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
             "allow_headers": ["Content-Type", "Authorization"],
             "supports_credentials": True,
@@ -26,4 +26,4 @@ api = Api(app)
 api.add_namespace(students)  # Add the students namespace to the API
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, port=6969)
