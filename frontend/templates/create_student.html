@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Student</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Create New Student</h2>
+        <form id="create-student-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter student name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter student email" required>
+            </div>
+            <div class="form-group">
+                <label for="seniority">Seniority</label>
+                <select class="form-control" id="seniority" name="seniority" required>
+                    <option value="Freshman">Freshman</option>
+                    <option value="Sophomore">Sophomore</option>
+                    <option value="Junior">Junior</option>
+                    <option value="Senior">Senior</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Create Student</button>
+        </form>
+    </div>
+
+    <script>
+        const API_URL = '{{ backend_url }}';  // Get URL from Flask
+    </script>
+    <script src="{{ url_for('static', filename='js/students.js') }}"></script>
+</body>
+</html>
