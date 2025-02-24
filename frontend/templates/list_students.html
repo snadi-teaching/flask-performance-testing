@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Students</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <h2>List of Students</h2>
+    <table id="students-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Seniority</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Student rows will go here dynamically -->
+        </tbody>
+    </table>
+
+    <script>
+        const API_URL = '{{ backend_url }}';  // Get URL from Flask
+    </script>
+    <script src="{{ url_for('static', filename='js/students.js') }}"></script>
+    <script>
+        window.onload = fetchStudents;
+    </script>
+</body>
+</html>

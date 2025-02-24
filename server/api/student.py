@@ -71,3 +71,9 @@ class Student(Resource):
             return "Student not found", HTTPStatus.NOT_FOUND
 
         return "Student updated", HTTPStatus.OK
+
+    def delete(self, email):
+        deleted_student = students.delete_student(email)
+        if deleted_student == 0:
+            return "Student not found", HTTPStatus.NOT_FOUND
+        return "Student deleted", HTTPStatus.OK

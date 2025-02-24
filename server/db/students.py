@@ -43,6 +43,11 @@ def update_student(lookupemail: str, name: str, email: str, seniority: str):
     return result
 
 
+def delete_student(email: str):
+    result = _get_student_collection().delete_one({EMAIL: email})
+    return result.deleted_count
+
+
 def get_student_by_email(email: str):
     student = _get_student_collection().find_one({EMAIL: email})
     return serialize_item(student)
