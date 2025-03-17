@@ -1,8 +1,8 @@
 
 
-# In-Class Exercise: Static Application Security Testing (SAST)
+# In-Class Exercise 1: Static Application Security Testing (SAST)
 
-In this exercise, you will practice running Static Application Security Testing (SAST) tools to analyze the security of the given Flask application. This is the same repo we used before with a front end and backe end. You will use three different SAST tools to scan the codebase for vulnerabilities:
+In this exercise, you will practice running Static Application Security Testing (SAST) tools to analyze the security of the given Flask application. This is the same repo we used before with a front end and backend but I dockerized it. You will use three different SAST tools to scan the codebase for vulnerabilities:
 
 - **[Bandit](https://bandit.readthedocs.io/en/latest/)**: A tool for finding common security issues in Python code.
 - **[Trivy](https://trivy.dev/latest/)**: A tool that scans container images for vulnerabilities.
@@ -10,7 +10,7 @@ In this exercise, you will practice running Static Application Security Testing 
 
 ## Prerequisites
 
-Bandit and Checkov can be installed through pip and are already in the provided requirements.txt file (see creating virtual environment and installing dependencies below)
+Bandit and Checkov can be installed through pip and are already in the provided requirements.txt file (see creating virtual environment and installing dependencies below). You should run the steps below in a virtual environment with the dependencies installed.
 
 Trivy needs to be installed by following the [instructions relevant to your OS](https://github.com/aquasecurity/trivy). For MacOS, you can use `brew install trivy`
 
@@ -30,59 +30,49 @@ and then run it on your front end
 bandit -r frontend
 ```
 
-Review the results and check the provided links to solve the issues. Re-run and make sure the issues are gone.
-
 ### Step 2: Scan for Vulnerabilities with Trivy
+ 
+ Run 
 
-If the project is containerized (e.g., using Docker), you will need to scan the Docker image. First, build the Docker image:
-
-```bash
-docker build -t flask-security-app .
+```
+trivy fs --scanners vuln,secret,misconfig .
 ```
 
-Now, use Trivy to scan the image for vulnerabilities:
-
-```bash
-trivy image flask-security-app
-```
-
-Trivy will analyze the container image and report any vulnerabilities in the installed software packages.
 
 ### Step 4: Scan Infrastructure Code with Checkov
 
-If the project includes any Infrastructure as Code (IaC) files (e.g., Terraform files), run Checkov on those files. For example, if there are Terraform files in the `infrastructure/` folder, run:
+Checkov considers Dockerfiles while scanning infrastructure code files.
 
 ```bash
-checkov -d infrastructure/
+checkov -d  .
 ```
-
-Checkov will scan the IaC files for potential security issues, such as misconfigurations in cloud infrastructure.
 
 ### Step 5: Review Results and Fix Issues
 
-Review the findings from all three tools and attempt to fix any security issues. For each issue, document:
+Review the findings from all three tools and answer the following questions. Put your answers on brightspace
 
-- The nature of the vulnerability.
-- How you addressed the vulnerability.
-- If applicable, commit your changes to the repo.
+1. Which vulnerabilities are common between the tools?
+2. Are there vulnerabilities that only one tool seems to detect?
+3. Pick one vulnerability and fix it based on the provided error message. You can search for how this error can be fixed or even ask ChatGPT. Rescan using the respective tool to make sure it's fixed
 
-### Step 6: Submit Your Work
+# In-Class Exercise 2: Dynamic Application Security Testing (DAST)
 
-Once you've completed the exercise and fixed any issues, submit your updated code and a short report summarizing the issues found and the actions you took to resolve them.
-
-## Deliverables
-
-1. The fixed code with security improvements.
-2. A brief report (1-2 pages) summarizing the vulnerabilities found and how you fixed them.
-
-## Notes
-
-- Focus on fixing the most critical security vulnerabilities first.
-- If you encounter any issues or need clarification, feel free to reach out for help.
+1. Follow the instructions on [https://www.zaproxy.org/getting-started/](https://www.zaproxy.org/getting-started/) to download OWASP ZAP (hopefully you did this before class already)
+2. Make sure you have your application running using `docker compose up`. Double check that it works in the browser
+3. Open ZAP and follow the run automated scan instructions [https://www.zaproxy.org/getting-started/](https://www.zaproxy.org/getting-started/). Basically, you want to click on "Automated Scan" and enter "http://127.0.0.1:800" in the "URL to Attack" box and then click "Attack". It will take a minute or so before you see the summary of teh results in the bottom left.
 
 
+# Running the app
 
-## Running the app
+If you just want to run the app, follow these instructions
+
+## Running the app with docker
+
+```
+docker compose up --build -d
+```
+
+## Running the app without docker
 
 ### Create virtual environment and install dependencies
 
