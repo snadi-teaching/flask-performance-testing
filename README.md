@@ -10,7 +10,7 @@ In this exercise, you will practice running Static Application Security Testing 
 
 ## Prerequisites
 
-Bandit and Checkov can be installed through pip and are already in the provided requirements.txt file (see creating virtual environment and installing dependencies below). You should run the steps below in a virtual environment with the dependencies installed.
+Bandit and Checkov can be installed through pip and are already in the provided requirements.txt file (see creating virtual environment and installing dependencies below). **You should run the steps below in a virtual environment with the dependencies installed. (i.e., create a virtual environment first and install the dependencies in the requirements.txt file)**
 
 Trivy needs to be installed by following the [instructions relevant to your OS](https://github.com/aquasecurity/trivy). For MacOS, you can use `brew install trivy`
 
