@@ -1,101 +1,90 @@
 
+# Performance Testing with JMeter
 
-# In-Class Exercise 1: Static Application Security Testing (SAST)
+The goal of this exercise is to guide you through designing a performance test plan for your Flask application using JMeter. Note that this can also apply to any other web application.
 
-In this exercise, you will practice running Static Application Security Testing (SAST) tools to analyze the security of the given Flask application. This is the same repo we used before with a front end and backend but I dockerized it. You will use three different SAST tools to scan the codebase for vulnerabilities:
-
-- **[Bandit](https://bandit.readthedocs.io/en/latest/)**: A tool for finding common security issues in Python code.
-- **[Trivy](https://trivy.dev/latest/)**: A tool that scans container images for vulnerabilities.
-- **[Checkov](https://www.checkov.io)**: A static code analysis tool for Infrastructure as Code (IaC), such as Terraform or CloudFormation.
-
-## Prerequisites
-
-Bandit and Checkov can be installed through pip and are already in the provided requirements.txt file (see creating virtual environment and installing dependencies below). **You should run the steps below in a virtual environment with the dependencies installed. (i.e., create a virtual environment first and install the dependencies in the requirements.txt file)**
-
-Trivy needs to be installed by following the [instructions relevant to your OS](https://github.com/aquasecurity/trivy). For MacOS, you can use `brew install trivy`
-
-## Instructions
-
-### Step 1: Scan the application with Bandit
-
-Run Bandit on the Python files in your backend
-
-```bash
-bandit -r server
-```
-
-and then run it on your front end
-
-```bash
-bandit -r frontend
-```
-
-### Step 2: Scan for Vulnerabilities with Trivy
- 
- Run 
-
-```
-trivy fs --scanners vuln,secret,misconfig .
-```
+Remember that our current simple demo application is for a student management system. We don't really have a lot going on in this system but it will serve the demo purpose.
 
 
-### Step 4: Scan Infrastructure Code with Checkov
+## Walk through the steps of the performance testing process
 
-Checkov considers Dockerfiles while scanning infrastructure code files.
+### 1.  Decide on the testing environment
 
-```bash
-checkov -d  .
-```
+In an ideal world, we have some test environment that we can deploy to and it is as close as possible to our production environment. We are in a class setting so we are far from the ideal world :-) 
 
-### Step 5: Review Results and Fix Issues
+For our purposes, our test environment will be our local computer. While you can use your deployment machine, it will likely be very slow and digital ocean might block the high number of requests.
 
-Review the findings from all three tools and answer the following questions. Put your answers on brightspace
+### 2.  Identify performance metrics
 
-1. Which vulnerabilities are common between the tools?
-2. Are there vulnerabilities that only one tool seems to detect?
-3. Pick one vulnerability and fix it based on the provided error message. You can search for how this error can be fixed or even ask ChatGPT. Rescan using the respective tool to make sure it's fixed
+You have multiple performance metrics on Slide 20 in the lecture. Think of which performance metrics make sense here. For the purposes of the demo, we will choose response time, latency, and error rate.
 
-# In-Class Exercise 2: Dynamic Application Security Testing (DAST)
+Other metrics are also applicable.
 
-1. Follow the instructions on [https://www.zaproxy.org/getting-started/](https://www.zaproxy.org/getting-started/) to download OWASP ZAP (hopefully you did this before class already)
-2. Make sure you have your application running using `docker compose up`. Double check that it works in the browser
-3. Open ZAP and follow the run automated scan instructions [https://www.zaproxy.org/getting-started/](https://www.zaproxy.org/getting-started/). Basically, you want to click on "Automated Scan" and enter "http://127.0.0.1:800" in the "URL to Attack" box and then click "Attack". It will take a minute or so before you see the summary of teh results in the bottom left.
+### 3. Plan and design the performance test (take into account diff. user types, data, scenarios etc)
+
+Given our simple system, we only have limited functionality. We will select the following three main use cases: adding a student, listing students, deleting a student. So these provide three different use cases and we can assume that we have multiple users of the system who may each be doing one or more of these actions at the same time.
+
+Note: In a real setting, you would have more complicated use cases and scenarios that actually depend on each other (e.g., doing an action depends on the success of the authentication endpoint). In the jobboard case, one example is a company user logs in and creates a new post while another example is a job seeker logs in and checks the status of their job applications. Examples of specific checkpoints you want to verify (e.g., checkpoint 1: user logged in sucessfully and within a short amount of time, checkpoint 2: post is created successfully and in a short amount of time). JMeter allows the addition of assertions. The [following link](https://www.baeldung.com/jmeter-session-cookie-management) describes how to handle authentication, cookies and session management between tests. You will need this to set up proper scenarios in your tests.
+
+### 4. Configure the test environment
+
+We don't have much to configure here since we are running on our local machine but let's now fire up the application by running `docker compose up --build -d`
+
+Make sure you can access [http://127.0.0.1:6969](http://127.0.0.1:6969). Note that we are running the performance tests on the backend.
+
+### 5. Implement the tests
+
+We will use JMeter to implement the tests. In this exercise, we will focus on baseline testing where our goal is to understand how our system behaves in normal circumstances. The parameters of the tests would differ if we are doing stress testing for example where we want to overwhelm the system with requests.
+
+1. **Create a Test Plan** name your test plan "Baseline Testing"
+2. **Create a Thread Group** to simulate multiple users. Right click on the test plan you just created then choose Add --> Threads (Users) --> Thread Group
+3. **Fill in the thread group details** as this screenshot:
+
+![alt text](/docs/imgs/image.png)
+
+Remember that baseline testing is about establishing some measure you can compare to later. In this case, we will execute the user case as a single user. Since we have only one user here, the ramp up won't make a difference (no parallel users). However, taking a single measurement is not reliable so we want to repeat the requests multiple times to be able to later have a median etc. I chose 30 for feasiblity for the demo.
+
+4. **Add HTTP Requests.** Ok, in this thread group, as its name indicates, the scenario is we have the user add a student and then list all students so we want to tell Jmeter the requests that do that (i.e., what will happen in this test). Right click the thread group, then click "Add --> Sampler --> HTTPRequest" and fill it in as follows:
+
+![alt text](/docs/imgs/addstudent.png)
+
+Repeat this step to add another HTTPRequest for this thread group but for viewing students.
+
+4. **Add Listeners** to capture test results (e.g., Summary Report, View Results Tree).
+
+Right-click on Thread Group > Add > Listener > View Results in Table.
+
+Repeat to add an aggregate report.
+
+Your configuration should look like this:
+
+![alt text](/docs/imgs/reports.png)
+
+### 5. Execute tests
+
+Click on the green start mark.
+
+### 6. Analyze, report, retest  
+
+Look at the output of the tests. In this case, we simply have a baseline so it gives us an idea of how are system performs under very ideal circumstances.
+
+# Saving reports & re-running performance tests
+
+Once you create a test plan, you can save it as a `.jmx` file from Jmeter and then you can use the command line to run this plan multiple times. 
+
+For example, the test plan we created above is in the `plans/` folder of this repo. We can re-run the above performance test as (this assumes you in the jmeter bin directory):
+
+`./jmeter -n -t <path to jmx plan file> -l <path to a jtl results file you want to save results to>`
+
+e.g.,
+
+`./jmeter -n -t /Users/bob/Downloads/BaselineTest.jmx -l /Users/bob/Downloads/BaselineTestResults.jtl`
+
+Then, you can generate a visual report for this:
+
+`./jmeter -g <path_to_output_file>.jtl -e -o <path_to_report_directory>`
+
+e.g., 
 
 
-# Running the app
-
-If you just want to run the app, follow these instructions
-
-## Running the app with docker
-
-```
-docker compose up --build -d
-```
-
-## Running the app without docker
-
-### Create virtual environment and install dependencies
-
-```
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-```
-
-### Run the back end
-
-```
-cd server
-python app.py
-```
-
-### Run the front end
-
-In a **different terminal**, navigate to the project's directory and run
-
-```
-source .venv/bin/activate
-cd frontend
-python frontend.py
-```
-
+`./jmeter -g /Users/bob/Downloads/BaselineTestResults.jtl -e -o /Users/bob/Downloads/JmeterResults/`

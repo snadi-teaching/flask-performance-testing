@@ -18,6 +18,7 @@ CORS(
     },
 )
 
+password = "12345"
 
 init_db(app)
 

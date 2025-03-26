@@ -1,0 +1,181 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1742975242815,17,Add student,200,OK,Add&ListGroup 1-1,text,true,,892,385,1,1,http://127.0.0.1:6969/students/,11,0,7
+1742975242815,13,Add student-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,260,1,1,http://127.0.0.1:6969/students,11,0,7
+1742975242828,4,Add student-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,4,0,0
+1742975242833,5,List Students,200,OK,Add&ListGroup 1-1,text,true,,892,249,1,1,http://127.0.0.1:6969/students/,2,0,0
+1742975242833,2,List Students-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,124,1,1,http://127.0.0.1:6969/students,2,0,0
+1742975242835,3,List Students-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,3,0,1
+1742975242839,4,Add student,200,OK,Add&ListGroup 1-1,text,true,,892,385,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975242839,1,Add student-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,260,1,1,http://127.0.0.1:6969/students,1,0,0
+1742975242841,2,Add student-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,2,0,0
+1742975242844,5,List Students,200,OK,Add&ListGroup 1-1,text,true,,892,249,1,1,http://127.0.0.1:6969/students/,2,0,0
+1742975242844,2,List Students-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,124,1,1,http://127.0.0.1:6969/students,2,0,0
+1742975242846,3,List Students-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,3,0,0
+1742975242849,5,Add student,200,OK,Add&ListGroup 1-1,text,true,,892,385,1,1,http://127.0.0.1:6969/students/,2,0,1
+1742975242849,2,Add student-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,260,1,1,http://127.0.0.1:6969/students,2,0,1
+1742975242851,3,Add student-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,3,0,0
+1742975242854,4,List Students,200,OK,Add&ListGroup 1-1,text,true,,892,249,1,1,http://127.0.0.1:6969/students/,2,0,0
+1742975242854,2,List Students-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,124,1,1,http://127.0.0.1:6969/students,2,0,0
+1742975242856,2,List Students-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,2,0,0
+1742975242858,5,Add student,200,OK,Add&ListGroup 1-1,text,true,,892,385,1,1,http://127.0.0.1:6969/students/,2,0,1
+1742975242858,2,Add student-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,260,1,1,http://127.0.0.1:6969/students,2,0,1
+1742975242860,3,Add student-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,3,0,0
+1742975242863,5,List Students,200,OK,Add&ListGroup 1-1,text,true,,892,249,1,1,http://127.0.0.1:6969/students/,2,0,0
+1742975242863,2,List Students-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,124,1,1,http://127.0.0.1:6969/students,2,0,0
+1742975242865,3,List Students-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,3,0,0
+1742975242868,6,Add student,200,OK,Add&ListGroup 1-1,text,true,,892,385,1,1,http://127.0.0.1:6969/students/,3,0,0
+1742975242868,3,Add student-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,260,1,1,http://127.0.0.1:6969/students,3,0,0
+1742975242871,3,Add student-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,3,0,0
+1742975242874,4,List Students,200,OK,Add&ListGroup 1-1,text,true,,892,249,1,1,http://127.0.0.1:6969/students/,2,0,0
+1742975242874,2,List Students-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,124,1,1,http://127.0.0.1:6969/students,2,0,0
+1742975242876,2,List Students-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,2,0,0
+1742975242878,5,Add student,200,OK,Add&ListGroup 1-1,text,true,,892,385,1,1,http://127.0.0.1:6969/students/,2,0,1
+1742975242878,2,Add student-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,260,1,1,http://127.0.0.1:6969/students,2,0,1
+1742975242880,3,Add student-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,3,0,0
+1742975242883,5,List Students,200,OK,Add&ListGroup 1-1,text,true,,892,249,1,1,http://127.0.0.1:6969/students/,2,0,0
+1742975242883,2,List Students-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,124,1,1,http://127.0.0.1:6969/students,2,0,0
+1742975242885,3,List Students-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,3,0,0
+1742975242888,5,Add student,200,OK,Add&ListGroup 1-1,text,true,,892,385,1,1,http://127.0.0.1:6969/students/,2,0,0
+1742975242888,2,Add student-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,260,1,1,http://127.0.0.1:6969/students,2,0,0
+1742975242890,3,Add student-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,3,0,0
+1742975242893,5,List Students,200,OK,Add&ListGroup 1-1,text,true,,892,249,1,1,http://127.0.0.1:6969/students/,2,0,0
+1742975242893,2,List Students-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,124,1,1,http://127.0.0.1:6969/students,2,0,0
+1742975242895,3,List Students-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,3,0,0
+1742975242898,4,Add student,200,OK,Add&ListGroup 1-1,text,true,,892,385,1,1,http://127.0.0.1:6969/students/,2,0,0
+1742975242898,2,Add student-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,260,1,1,http://127.0.0.1:6969/students,2,0,0
+1742975242900,2,Add student-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,2,0,0
+1742975242902,5,List Students,200,OK,Add&ListGroup 1-1,text,true,,892,249,1,1,http://127.0.0.1:6969/students/,3,0,1
+1742975242902,3,List Students-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,124,1,1,http://127.0.0.1:6969/students,3,0,1
+1742975242905,2,List Students-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,2,0,0
+1742975242908,4,Add student,200,OK,Add&ListGroup 1-1,text,true,,892,385,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975242908,1,Add student-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,260,1,1,http://127.0.0.1:6969/students,1,0,0
+1742975242909,3,Add student-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,3,0,0
+1742975242912,5,List Students,200,OK,Add&ListGroup 1-1,text,true,,892,249,1,1,http://127.0.0.1:6969/students/,2,0,0
+1742975242912,2,List Students-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,124,1,1,http://127.0.0.1:6969/students,2,0,0
+1742975242914,3,List Students-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,3,0,0
+1742975242917,5,Add student,200,OK,Add&ListGroup 1-1,text,true,,892,385,1,1,http://127.0.0.1:6969/students/,2,0,1
+1742975242917,2,Add student-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,260,1,1,http://127.0.0.1:6969/students,2,0,1
+1742975242919,3,Add student-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,3,0,0
+1742975242922,4,List Students,200,OK,Add&ListGroup 1-1,text,true,,892,249,1,1,http://127.0.0.1:6969/students/,2,0,0
+1742975242922,2,List Students-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,124,1,1,http://127.0.0.1:6969/students,2,0,0
+1742975242924,2,List Students-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,2,0,0
+1742975242926,5,Add student,200,OK,Add&ListGroup 1-1,text,true,,892,385,1,1,http://127.0.0.1:6969/students/,3,0,0
+1742975242926,3,Add student-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,260,1,1,http://127.0.0.1:6969/students,3,0,0
+1742975242929,2,Add student-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,2,0,0
+1742975242931,3,List Students,200,OK,Add&ListGroup 1-1,text,true,,892,249,1,1,http://127.0.0.1:6969/students/,2,0,1
+1742975242931,2,List Students-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,124,1,1,http://127.0.0.1:6969/students,2,0,1
+1742975242933,1,List Students-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975242934,2,Add student,200,OK,Add&ListGroup 1-1,text,true,,892,385,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975242934,1,Add student-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,260,1,1,http://127.0.0.1:6969/students,1,0,0
+1742975242935,1,Add student-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975242937,2,List Students,200,OK,Add&ListGroup 1-1,text,true,,892,249,1,1,http://127.0.0.1:6969/students/,0,0,0
+1742975242937,0,List Students-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,124,1,1,http://127.0.0.1:6969/students,0,0,0
+1742975242938,1,List Students-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975242939,2,Add student,200,OK,Add&ListGroup 1-1,text,true,,892,385,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975242939,1,Add student-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,260,1,1,http://127.0.0.1:6969/students,1,0,0
+1742975242940,1,Add student-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975242941,2,List Students,200,OK,Add&ListGroup 1-1,text,true,,892,249,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975242941,1,List Students-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,124,1,1,http://127.0.0.1:6969/students,1,0,0
+1742975242942,1,List Students-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975242943,3,Add student,200,OK,Add&ListGroup 1-1,text,true,,892,385,1,1,http://127.0.0.1:6969/students/,1,0,1
+1742975242943,1,Add student-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,260,1,1,http://127.0.0.1:6969/students,1,0,1
+1742975242944,2,Add student-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,2,0,1
+1742975242946,4,List Students,200,OK,Add&ListGroup 1-1,text,true,,892,249,1,1,http://127.0.0.1:6969/students/,2,0,0
+1742975242946,2,List Students-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,124,1,1,http://127.0.0.1:6969/students,2,0,0
+1742975242948,2,List Students-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,2,0,0
+1742975242950,2,Add student,200,OK,Add&ListGroup 1-1,text,true,,892,385,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975242950,1,Add student-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,260,1,1,http://127.0.0.1:6969/students,1,0,0
+1742975242951,1,Add student-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975242953,2,List Students,200,OK,Add&ListGroup 1-1,text,true,,892,249,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975242953,1,List Students-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,124,1,1,http://127.0.0.1:6969/students,1,0,0
+1742975242954,1,List Students-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975242955,2,Add student,200,OK,Add&ListGroup 1-1,text,true,,892,385,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975242955,1,Add student-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,260,1,1,http://127.0.0.1:6969/students,1,0,0
+1742975242956,1,Add student-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975242957,2,List Students,200,OK,Add&ListGroup 1-1,text,true,,892,249,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975242957,1,List Students-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,124,1,1,http://127.0.0.1:6969/students,1,0,0
+1742975242958,1,List Students-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975242960,2,Add student,200,OK,Add&ListGroup 1-1,text,true,,892,385,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975242960,1,Add student-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,260,1,1,http://127.0.0.1:6969/students,1,0,0
+1742975242961,1,Add student-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975242962,2,List Students,200,OK,Add&ListGroup 1-1,text,true,,892,249,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975242962,1,List Students-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,124,1,1,http://127.0.0.1:6969/students,1,0,0
+1742975242963,1,List Students-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975242964,3,Add student,200,OK,Add&ListGroup 1-1,text,true,,892,385,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975242964,1,Add student-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,260,1,1,http://127.0.0.1:6969/students,1,0,0
+1742975242965,2,Add student-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,2,0,0
+1742975242967,5,List Students,200,OK,Add&ListGroup 1-1,text,true,,892,249,1,1,http://127.0.0.1:6969/students/,2,0,0
+1742975242967,2,List Students-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,124,1,1,http://127.0.0.1:6969/students,2,0,0
+1742975242969,3,List Students-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,3,0,0
+1742975242972,5,Add student,200,OK,Add&ListGroup 1-1,text,true,,892,385,1,1,http://127.0.0.1:6969/students/,2,0,0
+1742975242972,2,Add student-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,260,1,1,http://127.0.0.1:6969/students,2,0,0
+1742975242974,3,Add student-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,3,0,0
+1742975242977,2,List Students,200,OK,Add&ListGroup 1-1,text,true,,892,249,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975242977,1,List Students-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,124,1,1,http://127.0.0.1:6969/students,1,0,0
+1742975242978,1,List Students-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975242979,2,Add student,200,OK,Add&ListGroup 1-1,text,true,,892,385,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975242979,1,Add student-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,260,1,1,http://127.0.0.1:6969/students,1,0,0
+1742975242980,1,Add student-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975242981,2,List Students,200,OK,Add&ListGroup 1-1,text,true,,892,249,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975242981,1,List Students-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,124,1,1,http://127.0.0.1:6969/students,1,0,0
+1742975242982,1,List Students-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975242983,3,Add student,200,OK,Add&ListGroup 1-1,text,true,,892,385,1,1,http://127.0.0.1:6969/students/,1,0,1
+1742975242983,1,Add student-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,260,1,1,http://127.0.0.1:6969/students,1,0,1
+1742975242984,2,Add student-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,2,0,1
+1742975242986,2,List Students,200,OK,Add&ListGroup 1-1,text,true,,892,249,1,1,http://127.0.0.1:6969/students/,0,0,0
+1742975242986,0,List Students-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,124,1,1,http://127.0.0.1:6969/students,0,0,0
+1742975242987,1,List Students-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975242988,2,Add student,200,OK,Add&ListGroup 1-1,text,true,,892,385,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975242988,1,Add student-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,260,1,1,http://127.0.0.1:6969/students,1,0,0
+1742975242989,1,Add student-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975242990,2,List Students,200,OK,Add&ListGroup 1-1,text,true,,892,249,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975242990,1,List Students-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,124,1,1,http://127.0.0.1:6969/students,1,0,0
+1742975242991,1,List Students-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975242992,2,Add student,200,OK,Add&ListGroup 1-1,text,true,,892,385,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975242992,1,Add student-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,260,1,1,http://127.0.0.1:6969/students,1,0,0
+1742975242993,1,Add student-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975242994,2,List Students,200,OK,Add&ListGroup 1-1,text,true,,892,249,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975242994,1,List Students-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,124,1,1,http://127.0.0.1:6969/students,1,0,0
+1742975242995,1,List Students-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975242996,2,Add student,200,OK,Add&ListGroup 1-1,text,true,,892,385,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975242996,1,Add student-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,260,1,1,http://127.0.0.1:6969/students,1,0,0
+1742975242997,1,Add student-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975242998,2,List Students,200,OK,Add&ListGroup 1-1,text,true,,892,249,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975242998,1,List Students-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,124,1,1,http://127.0.0.1:6969/students,1,0,0
+1742975242999,1,List Students-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975243000,2,Add student,200,OK,Add&ListGroup 1-1,text,true,,892,385,1,1,http://127.0.0.1:6969/students/,1,0,1
+1742975243000,1,Add student-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,260,1,1,http://127.0.0.1:6969/students,1,0,1
+1742975243001,1,Add student-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975243002,2,List Students,200,OK,Add&ListGroup 1-1,text,true,,892,249,1,1,http://127.0.0.1:6969/students/,1,0,1
+1742975243002,1,List Students-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,124,1,1,http://127.0.0.1:6969/students,1,0,1
+1742975243003,1,List Students-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975243004,2,Add student,200,OK,Add&ListGroup 1-1,text,true,,892,385,1,1,http://127.0.0.1:6969/students/,1,0,1
+1742975243004,1,Add student-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,260,1,1,http://127.0.0.1:6969/students,1,0,1
+1742975243005,1,Add student-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975243006,2,List Students,200,OK,Add&ListGroup 1-1,text,true,,892,249,1,1,http://127.0.0.1:6969/students/,1,0,1
+1742975243006,1,List Students-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,124,1,1,http://127.0.0.1:6969/students,1,0,1
+1742975243007,1,List Students-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975243008,2,Add student,200,OK,Add&ListGroup 1-1,text,true,,892,385,1,1,http://127.0.0.1:6969/students/,1,0,1
+1742975243008,1,Add student-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,260,1,1,http://127.0.0.1:6969/students,1,0,1
+1742975243009,1,Add student-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975243011,2,List Students,200,OK,Add&ListGroup 1-1,text,true,,892,249,1,1,http://127.0.0.1:6969/students/,0,0,0
+1742975243011,0,List Students-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,124,1,1,http://127.0.0.1:6969/students,0,0,0
+1742975243011,2,List Students-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,2,0,1
+1742975243013,2,Add student,200,OK,Add&ListGroup 1-1,text,true,,892,385,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975243013,1,Add student-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,260,1,1,http://127.0.0.1:6969/students,1,0,0
+1742975243014,1,Add student-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975243015,2,List Students,200,OK,Add&ListGroup 1-1,text,true,,892,249,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975243015,1,List Students-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,124,1,1,http://127.0.0.1:6969/students,1,0,0
+1742975243016,1,List Students-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975243017,2,Add student,200,OK,Add&ListGroup 1-1,text,true,,892,385,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975243017,1,Add student-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,260,1,1,http://127.0.0.1:6969/students,1,0,0
+1742975243018,1,Add student-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975243019,2,List Students,200,OK,Add&ListGroup 1-1,text,true,,892,249,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975243019,1,List Students-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,124,1,1,http://127.0.0.1:6969/students,1,0,0
+1742975243020,1,List Students-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975243021,2,Add student,200,OK,Add&ListGroup 1-1,text,true,,892,385,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975243021,1,Add student-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,260,1,1,http://127.0.0.1:6969/students,1,0,0
+1742975243022,1,Add student-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975243023,2,List Students,200,OK,Add&ListGroup 1-1,text,true,,892,249,1,1,http://127.0.0.1:6969/students/,1,0,0
+1742975243023,1,List Students-0,308,PERMANENT REDIRECT,Add&ListGroup 1-1,text,true,,554,124,1,1,http://127.0.0.1:6969/students,1,0,0
+1742975243024,1,List Students-1,200,OK,Add&ListGroup 1-1,text,true,,338,125,1,1,http://127.0.0.1:6969/students/,1,0,0
