@@ -5,6 +5,9 @@ The goal of this exercise is to guide you through designing a performance test p
 
 Remember that our current simple demo application is for a student management system. We don't really have a lot going on in this system but it will serve the demo purpose.
 
+## Run JMeter
+
+To run JMeter, run the jmeter.bat (for Windows) or jmeter (for Unix) file. These files are found in the bin directory. See [https://jmeter.apache.org/usermanual/get-started.html](https://jmeter.apache.org/usermanual/get-started.html) for more details.
 
 ## Walk through the steps of the performance testing process
 
@@ -40,7 +43,7 @@ We will use JMeter to implement the tests. In this exercise, we will focus on ba
 2. **Create a Thread Group** to simulate multiple users. Right click on the test plan you just created then choose Add --> Threads (Users) --> Thread Group
 3. **Fill in the thread group details** as this screenshot:
 
-![alt text](/docs/imgs/image.png)
+![alt text](/docs/imgs/threadgrp.png)
 
 Remember that baseline testing is about establishing some measure you can compare to later. In this case, we will execute the user case as a single user. Since we have only one user here, the ramp up won't make a difference (no parallel users). However, taking a single measurement is not reliable so we want to repeat the requests multiple times to be able to later have a median etc. I chose 30 for feasiblity for the demo.
 
@@ -48,7 +51,21 @@ Remember that baseline testing is about establishing some measure you can compar
 
 ![alt text](/docs/imgs/addstudent.png)
 
-Repeat this step to add another HTTPRequest for this thread group but for viewing students.
+Repeat this step to add another HTTPRequest for this thread group but for viewing students (you will not need to include body data for viewing students).
+
+For the add student request, we will also specify the content type by following these steps:
+
+- Select your HTTP Request sampler in the Test Plan.
+- Right-click on it → Add → Config Element → HTTP Header Manager.
+- In the HTTP Header Manager, click Add and then set the following:
+
+    Name: Content-Type
+    Value: application/json 
+
+Your configuration would look like this:
+![alt text](/docs/imgs/HTTPHeaderManager.jpg)
+
+Note: in this simple exercise, we are repeatedly posting the same data to the DB. This is not a problem here since we don't ensure unique emails, ids etc per users. In your real system, this won't work as you can't have multiple users with the same id/email. See [docs/resources/SimulatingMultiplUsers.md](docs/resources/SimulatingMultiplUsers.md) for starting points on how to tell Jmeter to use different data with each request.
 
 4. **Add Listeners** to capture test results (e.g., Summary Report, View Results Tree).
 
@@ -88,3 +105,8 @@ e.g.,
 
 
 `./jmeter -g /Users/bob/Downloads/BaselineTestResults.jtl -e -o /Users/bob/Downloads/JmeterResults/`
+
+
+## Submit to Brightspace
+
+Take a screenshot of your Jmeter results (any of the listeners) as well as your html report and upload it to brightspace.
