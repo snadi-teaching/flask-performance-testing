@@ -1,9 +1,23 @@
-
 # Performance Testing with JMeter
+
+## Overview
 
 The goal of this exercise is to guide you through designing a performance test plan for your Flask application using JMeter. Note that this can also apply to any other web application.
 
 Remember that our current simple demo application is for a student management system. We don't really have a lot going on in this system but it will serve the demo purpose.
+
+### Learning Objectives
+- Follow the performance testing process to develop a test plan
+- Create and run a test plan in JMeter
+- Interpret the metrics gathered during performance testing
+
+### Prior Knowledge
+- Performance testing techniques
+- KPIs for measuring performance
+- Basic JMeter terminology
+
+### Time Estimate: 15 minutes
+
 
 ## Run JMeter
 
@@ -15,7 +29,7 @@ To run JMeter, run the jmeter.bat (for Windows) or jmeter (for Unix) file. These
 
 In an ideal world, we have some test environment that we can deploy to and it is as close as possible to our production environment. We are in a class setting so we are far from the ideal world :-) 
 
-For our purposes, our test environment will be our local computer. While you can use your deployment machine, it will likely be very slow and digital ocean might block the high number of requests.
+For our purposes, our test environment will be our local computer. While you can use your deployment machine, it will likely be very slow and DigitalOcean might block the high number of requests.
 
 ### 2.  Identify performance metrics
 
