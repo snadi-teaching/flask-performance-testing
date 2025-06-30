@@ -13,7 +13,7 @@ Remember that our current simple demo application is for a student management sy
 
 ### Prior Knowledge
 - Performance testing techniques
-- KPIs for measuring performance
+- Metrics for measuring performance
 - Basic JMeter terminology
 
 ### Time Estimate: 15 minutes
